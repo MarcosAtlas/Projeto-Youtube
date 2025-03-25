@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    border: 0; /* remove a borda padrão */
+    margin: 0; /* remove a margem padrão */
+    background-color: #0D0D0D; /* cor de fundo */ 
+    transition: background-color 0.3s ease; /* adiciona uma transição suave */
+}
+ 
+button img:hover, div img:hover {
+      filter: brightness(0) invert(1); /* muda a cor do ícone ao passar o mouse */
+      transition: filter 0.3s ease; /* adiciona uma transição suave */
+      transform: scale(1.1); /* adiciona um efeito de zoom */
+    }
+
+  
+
+.topo {
+    width: 100%; /* largura do topo */
+    display: flex; /* para alinhar os itens do topo */
+    height: 56px; /* altura do topo */
+    background-color: #181818; /* cor de fundo */ 
+    transition: background-color 0.3s ease; /* adiciona uma transição suave */
+}
+
+
+.topo--container--1 {
+    display: flex; /* para alinhar os itens do topo */
+    flex: 1; /* para ocupar todo o espaço do container */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+    align-items: center; /* para alinhar os itens no centro */
+    justify-content: flex-start;  /* para alinhar os itens no início */
+}
+
+.menu--icon {
+    width: 24px; /* largura do ícone */
+    height: 24px; /* altura do ícone */
+    margin-left: 20px; /* margem à esquerda */
+}
+
+.menu--logo {
+    margin-left: 40px;  /* margem à esquerda */
+    width: 100.91px; /* largura do logo */
+    height: 22.381px; /* altura do logo */
+}
+
+.topo--container--2 {
+    display: flex; /* para alinhar os itens do topo */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+    align-items: center; /* para alinhar os itens no centro */
+    justify-content: center; /* para alinhar os itens no centro */
+    flex: 2; /* para ocupar todo o espaço do container */
+}
+
+.campo--pesquisa {
+    width: 600px; /* largura do campo de pesquisa */
+    height: 38px; /* altura do campo de pesquisa */
+    border: 1px solid #2A2A2A; /* borda do campo de pesquisa */
+    outline: 0; /* remove a borda ao clicar */
+    background-color: #0F0F0F; /* cor de fundo */
+    border-top-left-radius: 45px; /* arredonda a borda superior esquerda */
+    border-bottom-left-radius: 45px; /* arredonda a borda inferior esquerda */
+    color: white; /* cor do texto */
+    padding-left: 10px; /* margem interna à esquerda */
+}
+
+.botao--pesquisa {
+    height: 38px; /* altura do botão de pesquisa */
+    border: 0; /* remove a borda */
+    outline: 0; /* remove a borda ao clicar */
+    background-color: #2A2A2A; /* cor de fundo */
+    width: 78px; /* largura do botão de pesquisa */
+    border-top-right-radius: 45px; /* arredonda a borda superior direita */
+    border-bottom-right-radius: 45px; /* arredonda a borda inferior direita */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* adiciona uma transição suave */
+}
+
+.botao--pesquisa:hover {
+    background-color: #444; /* muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* aumenta ligeiramente o botão */
+}
+
+.icone--botao--pesquisa {
+    width: 24px; /* largura do ícone */
+    height: 24px;    /* altura do ícone */
+}
+
+.botao--microfone {
+    width: 38px; /* largura do botão de microfone */
+    height: 38px; /* altura do botão de microfone */
+    border: 0; /* remove a borda */
+    outline: 0; /* remove a borda ao clicar */
+    background-color: #2A2A2A; /* cor de fundo */
+    border-radius: 50%; /* arredonda o botão */
+    margin-left: 32px; /* margem à esquerda */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* adiciona uma transição suave */
+}
+
+.botao--microfone:hover {
+    background-color: #444; /* muda a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* aumenta ligeiramente o botão */
+}
+
+.topo--container--3 {
+    display: flex; /* para alinhar os itens do topo */
+    flex: 1; /* para ocupar todo o espaço do container */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+    align-items: center; /* para alinhar os itens no centro */
+    justify-content: flex-end; /* para alinhar os itens no final */
+    gap: 34px; /* espaço entre os itens */
+}
+
+.avatar {
+    width: 34px; /* largura do avatar */
+    height: 34px; /* altura do avatar */
+    border-radius: 50%; /* para deixar a imagem redonda */
+    background-image: url('assets/images/avatar.jpg'); /* imagem do avatar */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    margin-right: 12px; /* margem à direita */
+}
+
+.icone--container--3 {
+    width: 29px; /* largura do ícone */
+}
+
+.menu {
+    display: flex; /* para alinhar os itens do menu */
+}
+
+nav {
+    width: 88px; /* largura do menu */
+    height: 309px; /* altura do menu */
+    background-color: #0F0F0F; /* cor de fundo */
+    display: flex; /* para alinhar os itens do menu */
+    flex-direction: column; /* para alinhar os itens na vertical */
+    gap: 32px; /* espaço entre os itens */
+}
+
+.botao--menu {
+    color: white; /* cor do texto */
+    display: flex; /* para alinhar os itens do menu */
+    flex-direction: column; /* para alinhar os itens na vertical */
+    justify-content: center; /* para alinhar os itens no centro */
+    align-items: center; /* para alinhar os itens no centro */
+}
+
+.nome--botao {
+    color: #FFF; /* cor do texto */
+    text-align: center;   /* alinha o texto no centro */
+    font-family: Inter; /* fonte do texto */
+    font-size: 8px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 500; /* peso da fonte */
+    line-height: normal; /* altura da linha */
+} 
+
+.banner {
+    width: 100%; /* largura do banner */
+    background-image: url("assets/images/youtube.jpeg"); /* imagem do banner */
+    background-position: center; /* Centraliza a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.meio--conteiner {
+    display: flex; /* para alinhar os itens do meio */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+    align-items: center; /* para alinhar os itens no centro */
+    justify-content: center; /* para alinhar os itens no centro */
+    width: 100%; /* largura do meio */
+    max-width: 1300px; /* largura máxima do meio */
+    margin: 0 auto; /* margem do meio */
+    gap: 20px; /* espaço entre os itens */
+    }
+
+    .meio {
+      width: 1100px; /* largura do meio */
+      display: flex; /* para alinhar os itens do meio */
+      flex-direction: column; /* para alinhar os itens na vertical */
+      gap: 20px; /* espaço entre os itens */
+      margin-top: 25px;
+
+    }
+
+    .infos--canal { 
+      height: 148px; /* altura do container */
+      border-radius: 8px; /* arredonda as bordas */
+      display: flex; /* para alinhar os itens do container */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      gap: 20px; /* espaço entre os itens */
+    
+    }
+
+    .infos--canal--1 {
+      flex: 1; /* para ocupar todo o espaço do container */
+      display: flex; /* para alinhar os itens do container */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      align-items: center; /* para alinhar os itens no centro */
+    }
+
+    .avatar--canal {
+      width: 128px;   /* largura do avatar */
+      height: 128px; /* altura do avatar */
+      background-image: url('assets/images/avatar.jpg'); /* imagem do avatar */
+      background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+      background-position: center; /* Centraliza a imagem */
+      border-radius: 50%; /* para deixar a imagem redonda */
+      margin-left: 32px; /* margem à esquerda */
+    }
+
+    .nome--canal--container {
+      display: flex; /* para alinhar os itens do container */
+      flex-direction: column; /* para alinhar os itens na vertical */
+      gap: 10px; /* espaço entre os itens */
+      margin-left: 16px; /* margem à esquerda */
+    }
+
+    .nome--canal {
+      font-family: Roboto; /* fonte do texto */
+      font-size: 30.375px; /* tamanho da fonte */
+      font-style: normal; /* estilo da fonte */
+      font-weight: 500; /* peso da fonte */
+      line-height: normal; /* altura da linha */
+      color: #FFF; /* cor do texto */
+      margin-left: 16px; /* margem à esquerda */
+   
+    }
+.numero--inscritos {
+      font-family: Roboto; /* fonte do texto */
+      font-size: 18px; /* tamanho da fonte */
+      font-style: normal; /* estilo da fonte */
+      font-weight: 500; /* peso da fonte */
+      line-height: normal; /* altura da linha */
+      color: #888; /* cor do texto */
+      margin-top: 10px; /* margem acima */
+    }
+
+    .nome--e-icon {
+      display: flex; /* para alinhar os itens */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      gap: 10px; /* espaço entre os itens */
+      align-items: center; /* para alinhar os itens no centro */
+      margin-top: 16px; /* margem acima */
+    }
+    .infos--canal--2 {
+      flex: 1; /* para ocupar todo o espaço do container */
+      display: flex; /* para alinhar os itens do container */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      justify-content: flex-end; /* para alinhar os itens no final */
+      gap: 20px; /* espaço entre os itens */
+      align-items: center; /* para alinhar os itens no centro */
+    }
+
+    .inscrito {
+      display: flex; /* para alinhar os itens */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      padding: 12px 24px; /* margem interna */
+      justify-content: center; /* para alinhar os itens no centro */
+      align-items: center; /* para alinhar os itens no centro */
+      gap: 8px; /* espaço entre os itens */
+      border-radius: 65px; /* arredonda as bordas */
+      background-color: #FFF; /* cor de fundo */
+      font-family: Roboto; /* fonte do texto */
+      border: 0; /* remove a borda */
+      outline: 0; /* remove a borda ao clicar */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Transição suave */
+
+    }
+
+    .inscrito:hover {
+      background-color: #cc0000; /* Cor de fundo ao passar o mouse */
+      transform: scale(1.05); /* Aumenta ligeiramente o botão */
+  }
+    
+    .menu--container {
+      display: flex;  /* para alinhar os itens do menu */
+      height: 40px;    /* altura do menu */
+      width: 100%;    /* largura do menu */
+      max-width: 1300px; /* largura máxima do menu */
+      margin-top:30px; /* margem do menu */
+      margin-left: 40px; /* margem à esquerda */
+      gap: 20px;  /* espaço entre os itens do menu */
+    }
+
+    .menu--item {
+      display: flex; /* para alinhar os itens do menu */
+      flex: 1; /* para ocupar todo o espaço do container */
+      justify-content: center; /* para alinhar os itens no centro */
+      align-items: center; /* para alinhar os itens no centro */
+      font-family: Roboto; /* fonte do texto */
+      font-size: 14px; /* tamanho da fonte */
+      font-style: normal; /* estilo da fonte */
+      font-weight: 500; /* peso da fonte */
+      line-height: normal; /* altura da linha */
+      color: #8f8f8f; /* cor do texto */
+      border: 2px solid transparent; /* borda do item */
+      transition: color 0.3s ease, background-color 0.3s ease; /* adiciona a transição */
+
+    }
+
+    .menu--item::after {
+      content: ''; /* adiciona um conteúdo */
+      position: absolute; /* posição absoluta */
+      bottom: -2px; /* posição da linha */
+      left: 50%; /* posição da linha */
+      width: 0; /* largura da linha */
+      height: 2px; /* altura da linha */
+      background-color: #FFF; /* cor da linha */
+      transition: width 0.3s ease, left 0.3s ease; /* adiciona a transição */
+    }
+
+    .menu--item:hover::after, .menu--item--selecionado::after {
+      width: 100%; /* largura da linha ao passar o mouse */
+      left: 0; /* posição da linha ao passar o mouse */
+    }
+
+    .menu--item:hover, .menu--item--selecionado {
+      color: #FFF; /* cor do texto */
+      background-color: #282828; /* cor de fundo */
+      border-radius: 2px; /* arredondar as bordas */
+      transform: scale(1.1); /* aumenta o tamanho do texto */
+
+    }
+
+    .trailer--container {
+      display: flex; /* para alinhar os itens do trailer */
+      flex-direction: row; /* para alinhar os itens na horizontal */
+      gap: 20px; /* espaço entre os itens */
+      margin-top: 30px; /* margem acima */
+      margin-left: 100px; /* margem à esquerda */
+      height: 118px; /* altura do trailer */
+      justify-content: flex-end; /* para alinhar os itens no final */
+    }
+
+    .trailer--1 {
+      flex: 1; /* para ocupar todo o espaço do container */
+      display: flex; /* para alinhar os itens do trailer */
+      flex-direction: column; /* para alinhar os itens na vertical */
+      gap: 10px; /* espaço entre os itens */
+      justify-content: center; /* para alinhar os itens no centro */
+    }
+
+    .trailer--2 {
+      flex: 3; /* para ocupar todo o espaço do container */
+      display: flex; /* para alinhar os itens do trailer */
+      flex-direction: column; /* para alinhar os itens na vertical */
+      gap: 10px; /* espaço entre os itens */
+      justify-content: center; /* para alinhar os itens no centro */
+    }
+
+    .video {
+      width: 210px; /* largura do vídeo */
+      height: 118px; /* altura do vídeo */
+      background-image: url('assets/images/logo--video.jpeg'); /* imagem do vídeo */
+      border-radius: 8px; /* arredonda as bordas */
+      background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+      background-position: center; /* Centraliza a imagem */
+      justify-content: center; /* para alinhar os itens no centro */
+    }
+
+
+  .nome--video {
+    font-family: Roboto; /* fonte do texto */
+    font-size: 20px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 700; /* peso da fonte */
+    line-height: normal; /* altura da linha */
+    color: #FFF; /* cor do texto */
+  }
+
+  .infos--video {
+    color: #8f8f8f; /* cor do texto */
+    font-family: Roboto; /* fonte do texto */
+    font-size: 12px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 500; /* peso da fonte */
+    line-height: normal; /* altura da linha */
+    margin-top: -8px; /* margem acima */
+  }
+
+  .desc--video {
+    color: #efefef; /* cor do texto */
+    font-family: Roboto; /* fonte do texto */
+    font-size: 14px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 500; /* peso da fonte */
+    line-height: 150%; /* altura da linha */
+    margin-top: 1px; /* margem acima */
+  }
+
+  .sessao--videos {
+    display: flex; /* para alinhar os itens da sessão */
+    height: 251px; /* altura da sessão */
+    flex-direction: column; /* para alinhar os itens na vertical */
+    gap: 20px; /* espaço entre os itens */
+    margin-top: 30px; /* margem acima */
+    margin-left: 100px; /* margem à esquerda */
+  }
+
+  .icon--video {
+    width: 16px; /* largura do ícone */
+    height: 16px; /* altura do ícone */
+    margin-left: 78px; /* margem à esquerda */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .play--all {
+    color: #9a9a9a; /* cor do texto */
+    font-family: Roboto; /* fonte do texto */
+    font-size: 14px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 500; /* peso da fonte */
+    line-height: normal; /* altura da linha */
+    margin-left: 8px; /* margem à esquerda */ 
+    margin-top: 2px; /* margem acima */
+  }
+
+  .video--container {
+    width: 210px; /* largura do container */;
+    height: 200px;  /* altura do container */
+    display: flex; /* para alinhar os itens do container */
+    flex-direction: column; /* para alinhar os itens na horizontal */
+    flex: 1; /* para ocupar todo o espaço do container */
+    margin-top: 2px; /* margem acima */
+  }
+
+
+  .imagens--1 {
+    width: 200px; /* largura do vídeo */
+    height: 200px; /* altura do vídeo */
+    background-image: url('assets/images/logo--velhina.jpeg'); /* imagem do vídeo */
+    border-radius: 8px; /* arredonda as bordas */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    justify-content: center; /* para alinhar os itens no centro */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .imagens--2 {
+    width: 200px; /* largura do vídeo */
+    height: 200px; /* altura do vídeo */
+    background-image: url('assets/images/solo.jpg'); /* imagem do vídeo */
+    border-radius: 8px; /* arredonda as bordas */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    justify-content: center; /* para alinhar os itens no centro */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .imagens--3 {
+    width: 200px; /* largura do vídeo */
+    height: 200px; /* altura do vídeo */
+    background-image: url('assets/images/infinito.png'); /* imagem do vídeo */
+    border-radius: 8px; /* arredonda as bordas */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    justify-content: center; /* para alinhar os itens no centro */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .imagens--4  {
+    width: 200px; /* largura do vídeo */
+    height: 200px; /* altura do vídeo */
+    background-image: url('assets/images/html.jpg'); /* imagem do vídeo */
+    border-radius: 8px; /* arredonda as bordas */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    justify-content: center; /* para alinhar os itens no centro */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .imagens--5  {
+    width: 200px; /* largura do vídeo */
+    height: 200px; /* altura do vídeo */
+    background-image: url('assets/images/historia.jpg'); /* imagem do vídeo */
+    border-radius: 8px; /* arredonda as bordas */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+    background-position: center; /* Centraliza a imagem */
+    justify-content: center; /* para alinhar os itens no centro */
+    margin-top: 2px; /* margem acima */
+  }
+
+  .sub--nome {
+    font-family: Roboto; /* fonte do texto */
+    font-size: 17px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 700; /* peso da fonte */
+    line-height: normal; /* altura da linha */
+    color: #FFF; /* cor do texto */
+    margin-top: 6px; /* margem acima */
+  }
+
+
+.sessao--canal {
+    font-family: Roboto; /* fonte do texto */
+    font-size: 13px; /* tamanho da fonte */
+    font-style: normal; /* estilo da fonte */
+    font-weight: 500; /* peso da fonte */
+    line-height: 150%; /* altura da linha */
+    color: #9a9a9a; /* cor do texto */
+    margin: 0; /* remove a margem padrão */
+}
+
+.check {
+    width: 16px; /* largura do ícone */
+    height: 16px; /* altura do ícone */
+    margin-left: 6px; /* margem à esquerda */
+  
+}
+
+.dados--canal {
+    display: flex; /* para alinhar os itens do container */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+}
+
+.sessao--row--videos {
+    display: flex; /* para alinhar os itens da sessão */
+    flex-direction: row; /* para alinhar os itens na horizontal */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: -5px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+  transition: background-color 0.3s ease; /* adiciona uma transição suave */
+}
+
+footer:hover {
+  background-color: #444; /* muda a cor de fundo ao passar o mouse */
+}
+
+.imagens--6 {
+  width: 200px; /* largura do vídeo */
+  height: 200px; /* altura do vídeo */
+  background-image: url('assets/images/viagem.jpg'); /* imagem do vídeo */
+  border-radius: 8px; /* arredonda as bordas */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  justify-content: center; /* para alinhar os itens no centro */
+  margin-top: 2px; /* margem acima */
+}
+
+.imagens--7 {
+  width: 200px; /* largura do vídeo */
+  height: 200px; /* altura do vídeo */
+  background-image: url('assets/images/desenvolvimento.jpg'); /* imagem do vídeo */
+  border-radius: 8px; /* arredonda as bordas */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  justify-content: center; /* para alinhar os itens no centro */
+  margin-top: 2px; /* margem acima */
+}
+
+.imagens--8 {
+  width: 200px; /* largura do vídeo */
+  height: 200px; /* altura do vídeo */
+  background-image: url('assets/images/educativo.jpg'); /* imagem do vídeo */
+  border-radius: 8px; /* arredonda as bordas */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  justify-content: center; /* para alinhar os itens no centro */
+  margin-top: 2px; /* margem acima */
+}
+
+.imagens--9 {
+  width: 200px; /* largura do vídeo */
+  height: 200px; /* altura do vídeo */
+  background-image: url('assets/images/diy.jpg'); /* imagem do vídeo */
+  border-radius: 8px; /* arredonda as bordas */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  justify-content: center; /* para alinhar os itens no centro */
+  margin-top: 2px; /* margem acima */
+}
+
+.imagens--10 {
+  width: 200px; /* largura do vídeo */
+  height: 200px; /* altura do vídeo */
+  background-image: url('assets/images/tecnologia.jpg'); /* imagem do vídeo */
+  border-radius: 8px; /* arredonda as bordas */
+  background-size: cover; /* Ajusta a imagem para cobrir toda a div */
+  background-position: center; /* Centraliza a imagem */
+  justify-content: center; /* para alinhar os itens no centro */
+  margin-top: 2px; /* margem acima */
+}
+
