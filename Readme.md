@@ -23,7 +23,7 @@ Este projeto foi concluído em 25 de março e tem como objetivo criar um canal n
 5. Abra um Pull Request.
 
 ## Contato
-Para mais informações, entre em contato pelo email: contato@projetoyoutube.com
+Para mais informações, entre em contato pelo email: joaoviaja@gmail.com
 
 ## Licença
 Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
